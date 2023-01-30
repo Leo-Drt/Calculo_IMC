@@ -11,13 +11,13 @@ int main()
     float peso, altura, imc;
 
     printf("\t* Calcule seu IMC * \n");
-    printf(" OBS: IMC (Õndice de Massa Corporal)\n");
+    printf(" OBS: IMC (√çndice de Massa Corporal)\n");
     printf(" Para o calculo do seu IMC precisa-se do seu peso e sua altura. \n");
 
-    printf(" Digite sua altura: ");
+    printf(" Digite sua altura em metros: ");
     scanf("%f",&altura);
 
-    printf("\n Digite agora seu peso: ");
+    printf("\n Digite agora seu peso em Kg: ");
     scanf("%f",&peso);
 
     imc = peso / (altura,pow(altura,2));
@@ -27,22 +27,22 @@ int main()
     printf(" Seu IMC %.2f \n",imc);
 
     if(imc < 18.5){
-        printf(" VocÍ est· abaixo do peso.\n");
+        printf(" Voc√™ est√° abaixo do peso.\n");
     }
     if(imc > 18.5 && imc < 25){
-        printf(" VocÍ est· no peso normal.\n");
+        printf(" Voc√™ est√° no peso normal.\n");
     }
     if(imc > 25 && imc < 30){
-        printf(" VocÍ est· sobrepeso.\n");
+        printf(" Voc√™ est√° sobrepeso.\n");
     }
     if(imc > 30 && imc < 35){
-        printf(" VocÍ est· com IMC de obesidade grau 1.\n");
+        printf(" Voc√™ est√° com IMC de obesidade grau 1.\n");
     }
     if(imc > 35 && imc < 40){
-        printf(" VocÍ est· com IMC de obesidade grau 2.\n");
+        printf(" Voc√™ est√° com IMC de obesidade grau 2.\n");
     }
     if(imc >= 40){
-        printf(" VocÍ est· com IMC de obesidade grau 3.\n");
+        printf(" Voc√™ est√° com IMC de obesidade grau 3.\n");
     }
 
     printf("\n");
